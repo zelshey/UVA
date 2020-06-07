@@ -6,12 +6,10 @@ public class Main{
     public static void main(String []args){
         Scanner in = new Scanner(System.in);
         
-        while(in.hasNextLine()){
-            String next = in.nextLine();
-            String [] split = next.split(" ");
-            
-            int a = Integer.parseInt(split[0]);
-            int b = Integer.parseInt(split[1]);
+        while(in.hasNext()){
+
+            int a = in.nextInt();
+            int b = in.nextInt();
             int min = a > b ? b : a;
             int max = a > b ? a : b;
             
